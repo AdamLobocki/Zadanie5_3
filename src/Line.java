@@ -1,21 +1,23 @@
+import java.lang.Math;
 public class Line {
 
+
+    Point p;
+    Point k;
+
+    double lenght;
+
     String name;
-    int x;
-    int y;
-    int lenght;
 
+    public Line(Point p, Point k) {
+        this.p = p;
+        this.k = k;
+    }
 
-
-    int math(){
-        if(x > y){
-           lenght = x - y;
-           return lenght;
-        }
-        else {
-            lenght = y - x;
-            return lenght;
-        }
+    double math(){
+      lenght = (k.x - p.x)*(k.x - p.x) + (k.y - p.y)*(k.y - p.y);
+      lenght = Math.sqrt(lenght);
+      return lenght;
     }
 
 
