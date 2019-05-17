@@ -5,7 +5,7 @@ public class Line {
     Point p;
     Point k;
 
-    double lenght;
+
 
     String name;
 
