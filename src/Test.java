@@ -7,16 +7,18 @@ public class Test {
         Line line2 = new Line(point1, point2);
 
 
-        line1.math();
         line1.name = "pierwszego";
 
-        line2.math();
+
         line2.name = "drugiego";
 
 
         Compare compare = new Compare();
 
-        compare.comp(line1, line2);
+       Line result = compare.comp(line1, line2);
+
+        System.out.println("Długoć odcinka " + result.name + " = " + result.lenght + ". Zaczyna się w punkcie " +
+                result.p.x + "x" + result.p.y + "y" + " a kończy w punkcie " + result.k.x + "x" + result.k.y + "y");
 
 
     }
